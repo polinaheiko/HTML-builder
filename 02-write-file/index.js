@@ -29,7 +29,7 @@ function fileRecord(rl, fd) {
 
 
 console.log("Starting your new txt file!\n(To stop recording write 'exit' or press Ctrl+C)\n")
-    open('message.txt', 'a', (err, fd) => {
+    open('./02-write-file/message.txt', 'a', (err, fd) => {
         if (err) throw err;
         fileRecord(rl, fd);
 
